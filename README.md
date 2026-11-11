@@ -24,6 +24,10 @@ pip install ant-bms-ble
 antbms demo
 ```
 
+> **No terminal? Nothing to install.** The same battery data in your browser,
+> in English or Spanish: **[ant-bms-web](https://yosle.github.io/ant-bms-web/)**
+> (Chrome or Edge on Android and Windows), built on this spec.
+
 ## What is this?
 
 ANT BMS units (device names starting with `ANT-BLE`) speak an undocumented BLE
@@ -156,7 +160,9 @@ a few captured frames are enough to grow this table.
 Stuck in the Chinese-by-default official app? There is a short survival
 guide — language switch, connecting, known bugs, troubleshooting:
 [English](docs/official-app-guide.md) ·
-[Español](docs/official-app-guide.es.md).
+[Español](docs/official-app-guide.es.md). Or skip it: the
+[ant-bms-web](https://yosle.github.io/ant-bms-web/) browser dashboard shows the
+essentials in English or Spanish, no install needed.
 
 ## Roadmap
 
@@ -164,11 +170,11 @@ guide — language switch, connecting, known bugs, troubleshooting:
   (LiFePO4 / NMC / LTO) flagging suspicious settings.
 - **`ant-bms-arduino`**: standalone C++ library (NimBLE) for ESP32 — not tied
   to ESPHome — once the spec is confirmed on more models.
-- **Web Bluetooth dashboard**: zero-install browser viewer (separate repo).
 - **BMS emulator** for integration testing without hardware.
 
 ## Related projects
 
+- [yosle/ant-bms-web](https://github.com/yosle/ant-bms-web) — zero-install Web Bluetooth dashboard built on this spec (EN/ES)
 - [syssi/esphome-ant-bms](https://github.com/syssi/esphome-ant-bms) — ESPHome component (UART + BLE)
 - [fl4p/batmon-ha](https://github.com/fl4p/batmon-ha) — Home Assistant add-on
 - [patman15/BMS_BLE-HA](https://github.com/patman15/BMS_BLE-HA) + [aiobmsble](https://github.com/patman15/aiobmsble) — Home Assistant integration

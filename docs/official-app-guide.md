@@ -7,6 +7,11 @@ people never find the switch. This guide covers the handful of things most
 users actually need: changing the language, connecting, reading the main
 screen, and understanding the app's quirks.
 
+> **Just want to see your battery?** You can skip the official app:
+> [ant-bms-web](https://yosle.github.io/ant-bms-web/) opens in Chrome on
+> Android (or Chrome/Edge on Windows), needs no install, and shows charge
+> level, cells and alarms in English or Spanish.
+
 > Written against app version **2.3.5 (build 20240925)** — the same APK this
 > repository's [protocol spec](../PROTOCOL.md) was extracted from. The menu
 > locations below were **verified by inspecting that APK's code**; they may
@@ -133,5 +138,5 @@ antbms live      # live dashboard
 antbms demo      # try it without a battery
 ```
 
-A zero-install browser dashboard (Android & Windows, English/Spanish) is on
-the [roadmap](../README.md#roadmap).
+No terminal? [ant-bms-web](https://yosle.github.io/ant-bms-web/) runs the same
+dashboard in Chrome or Edge, with nothing to install, in English or Spanish.

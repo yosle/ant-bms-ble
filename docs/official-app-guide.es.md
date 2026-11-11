@@ -7,6 +7,11 @@ no encuentra nunca dónde cambiarlo. Esta guía cubre lo que la mayoría
 realmente necesita: cambiar el idioma, conectar, leer la pantalla principal y
 entender las rarezas de la app.
 
+> **¿Solo quieres ver tu batería?** Puedes saltarte la app oficial:
+> [ant-bms-web](https://yosle.github.io/ant-bms-web/) se abre en Chrome en
+> Android (o Chrome/Edge en Windows), no hay que instalar nada, y muestra el
+> nivel de carga, las celdas y las alarmas en español o inglés.
+
 > Escrita contra la versión **2.3.5 (build 20240925)** de la app — el mismo
 > APK del que se extrajo la [especificación del protocolo](../PROTOCOL.es.md)
 > de este repositorio. Las rutas de menú de abajo se **verificaron
@@ -137,5 +142,5 @@ antbms live      # dashboard en vivo
 antbms demo      # pruébalo sin batería
 ```
 
-Un dashboard de navegador sin instalación (Android y Windows, inglés/español)
-está en el [roadmap](../README.md#roadmap).
+¿Sin terminal? [ant-bms-web](https://yosle.github.io/ant-bms-web/) muestra el
+mismo dashboard en Chrome o Edge, sin instalar nada, en español o inglés.
