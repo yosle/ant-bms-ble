@@ -7,29 +7,41 @@ people never find the switch. This guide covers the handful of things most
 users actually need: changing the language, connecting, reading the main
 screen, and understanding the app's quirks.
 
-> Written against app version **20240925** (the same APK this repository's
-> [protocol spec](../PROTOCOL.md) was extracted from). Menus may move in other
-> versions. Paths marked **[VERIFY]** still need confirmation on a real
-> device.
+> Written against app version **2.3.5 (build 20240925)** — the same APK this
+> repository's [protocol spec](../PROTOCOL.md) was extracted from. The menu
+> locations below were **verified by inspecting that APK's code**; they may
+> move in other versions. The few things code inspection cannot confirm are
+> marked **[VERIFY]**.
 >
 > This project is not affiliated with the ANT BMS vendor; this is independent
 > user documentation.
 
 ## 1. Switching the language from Chinese to English
 
-If the app opened in Chinese, these are the characters to look for:
+**Why it starts in Chinese:** the app only contains two languages, Simplified
+Chinese and English. It follows your phone's system language — and for *any*
+unsupported language (Spanish, French, …) it falls back to **Chinese**, not
+English. That is why most non-English phones get a Chinese app.
+
+**Where the switch is** (verified in the app code):
+
+1. On the main screen, go to the **last section** (the settings/"more" list
+   at the end — reached by the last tab or by swiping to the final page
+   **[VERIFY]** which gesture your version uses).
+2. Tap the row **切换语言** ("Switch language"). It sits in the same list as
+   **切换版本** ("Switch versions") and the privacy-policy rows.
+3. A page titled 切换语言 opens with exactly two options:
+   **简体中文** (Simplified Chinese) and **English**. Tap **English**.
+4. The choice takes effect immediately and is remembered.
+
+Characters cheat-sheet:
 
 | You see | It means |
 |---|---|
-| 设置 | Settings |
-| 语言 | Language |
-| 中文 / 简体中文 | Chinese / Simplified Chinese |
-| English | English |
-| 我的 | "Mine" / profile tab |
-
-Steps **[VERIFY]**: open the profile/settings area (look for **设置** or the
-**我的** tab) → tap the row with **语言** → choose **English** → the app may
-need to be reopened.
+| 切换语言 | Switch language |
+| 简体中文 | Simplified Chinese |
+| 切换版本 | Switch versions (app mode) |
+| 绑定设备 | Bind device |
 
 ## 2. Connecting to your battery
 
@@ -46,6 +58,11 @@ need to be reopened.
 4. Only **one device can be connected at a time** — BLE allows a single
    active connection to the BMS. If another phone (or a PC) is connected, the
    battery will not show up or will refuse to connect.
+5. **Bluetooth mode vs cloud mode**: the app has separate modes (direct BLE,
+   and an internet/cloud mode with login, maps and device binding). If you
+   are being asked to log in or bind a device just to see your battery, you
+   are in the wrong mode — use the **切换版本 / Switch versions** row in the
+   same settings list as the language switch.
 
 ## 3. Reading the main screen
 
