@@ -142,10 +142,37 @@ for frame in frames:
 `antbms.protocol` has zero dependencies (`bleak` and `rich` are only imported
 by the CLI), so it also runs on MicroPython-class targets with minor shims.
 
+## Does it work with my battery?
+
+What matters is the **BMS inside the pack**, not the vehicle: any lithium
+battery with an **ANT BMS with Bluetooth** works, whether it powers an
+e-motorcycle, an electric tricycle or a home solar bank.
+
+**The 30-second test:** turn on Bluetooth and run `antbms scan` (or open
+[ant-bms-web](https://yosle.github.io/ant-bms-web/) and tap *Connect*). If a
+device whose name starts with **`ANT-BLE`** shows up, it works. If the official
+ANT BMS app connects to your battery, so will this.
+
+ANT BMS boards are common in lithium packs for e-motorcycles and electric
+tricycles, home solar and backup batteries (for example 48 V LiFePO4, 16S),
+DIY packs, golf carts, boats and RVs. The chemistry does not matter: LiFePO4,
+Li-ion (NMC) and LTO all work. In a solar setup, monitoring runs over
+Bluetooth and leaves the BMS↔inverter link (RS485/CAN) untouched.
+
+**It will not work with:**
+
+- lead-acid batteries (there is no BMS to talk to);
+- lithium packs with another BMS brand — JK (Jikong), Daly, JBD/Xiaoxiang,
+  Seplos… each one speaks its own protocol;
+- ANT BMS boards without the Bluetooth module;
+- older ANT BMS on the legacy `AA 55` protocol: it is documented in the
+  [spec appendix](PROTOCOL.md#appendix-old-protocol-ver--1) and `antbms
+  decode` reads its frames, but `antbms live` and ant-bms-web only connect over
+  the new protocol for now.
+
 ## Supported hardware
 
-The new `7E A1` protocol is spoken by ANT BMS units whose device name starts
-with `ANT-BLE`. Verified on:
+Models verified so far:
 
 | Model | Firmware | Status |
 |---|---|---|
