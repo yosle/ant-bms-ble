@@ -143,6 +143,13 @@ Other models/firmwares: please [open a device
 report](CONTRIBUTING.md#the-most-valuable-contribution-frames-from-your-bms) —
 a few captured frames are enough to grow this table.
 
+## Using the official app
+
+Stuck in the Chinese-by-default official app? There is a short survival
+guide — language switch, connecting, known bugs, troubleshooting:
+[English](docs/official-app-guide.md) ·
+[Español](docs/official-app-guide.es.md).
+
 ## Roadmap
 
 - **Config auditor**: `antbms report --audit` with per-chemistry safe ranges
