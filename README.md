@@ -85,6 +85,12 @@ No hardware around? Decode a frame offline:
 antbms decode 7ea11100009e01040410000000000000000010008801000000000000000000000000ca0cc40cc70ccc0cc50cc90cc30cc80ccb0cc40c9b0cc70cca0cc20cc80cc50c1b001d0019001e002e001c006d14b4004800620001010000402c42068090810450622500ad0300005a7e170100000000cc0c04009b0c0b003100c40c3400340000000000f2fa18100000541000001055220060361e0000000000000000000000fb00d3e6aa55
 ```
 
+That hex is not sample data — it is an actual frame captured mid-discharge
+from the pack in the [supported hardware](#supported-hardware) table. The same
+frame rendered by the TUI:
+
+![a real captured frame rendered by antbms](docs/real-capture.svg)
+
 ### `antbms report` — back up and audit your configuration
 
 Reads the device identity, **every** settings block (voltage, temperature,
