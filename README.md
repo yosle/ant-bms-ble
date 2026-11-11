@@ -14,8 +14,9 @@
 
 ![antbms live dashboard](https://raw.githubusercontent.com/yosle/ant-bms-ble/main/docs/demo.svg)
 
-That screenshot is the built-in demo — try the whole thing right now, **no
-battery and no Bluetooth needed**:
+That is the dashboard `antbms live` shows for **your** pack (the screenshot
+itself is rendered by the built-in demo). No battery at hand? Get the same
+dashboard with synthetic data — **no hardware and no Bluetooth needed**:
 
 ```bash
 pip install ant-bms-ble
@@ -69,7 +70,6 @@ don't cover:
 ```bash
 pip install ant-bms-ble
 
-antbms demo                           # the dashboard, synthetic data
 antbms scan                           # find your battery
 antbms live                           # the dashboard, your battery
 antbms live --plain                   # classic text output
@@ -78,6 +78,7 @@ antbms info                           # firmware versions, pack id, chip id
 antbms params --block voltage --auth  # one settings block, decoded
 antbms report --md --out my-pack.md   # FULL config + state backup
 antbms log --csv pack.csv --interval 5
+antbms demo                           # no battery? same dashboard, synthetic data
 ```
 
 No hardware around? Decode a frame offline:
