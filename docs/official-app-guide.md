@@ -10,8 +10,7 @@ screen, and understanding the app's quirks.
 > Written against app version **2.3.5 (build 20240925)** — the same APK this
 > repository's [protocol spec](../PROTOCOL.md) was extracted from. The menu
 > locations below were **verified by inspecting that APK's code**; they may
-> move in other versions. The few things code inspection cannot confirm are
-> marked **[VERIFY]**.
+> move in other versions.
 >
 > This project is not affiliated with the ANT BMS vendor; this is independent
 > user documentation.
@@ -26,8 +25,7 @@ English. That is why most non-English phones get a Chinese app.
 **Where the switch is** (verified in the app code):
 
 1. On the main screen, go to the **last section** (the settings/"more" list
-   at the end — reached by the last tab or by swiping to the final page
-   **[VERIFY]** which gesture your version uses).
+   at the end — reached by the last tab or by swiping to the final page).
 2. Tap the row **切换语言** ("Switch language"). It sits in the same list as
    **切换版本** ("Switch versions") and the privacy-policy rows.
 3. A page titled 切换语言 opens with exactly two options:
@@ -116,8 +114,7 @@ Found while reverse engineering the app (details in the spec):
 ## 7. Connection troubleshooting
 
 - **The pack goes to sleep**: after a while without activity it can stop
-  advertising entirely. Wait for it to reappear, or wake the BMS by applying
-  a brief charge or load **[VERIFY]**.
+  advertising entirely. Wait for it to reappear.
 - **Weak link**: the BMS radio is not strong (our reference pack measured
   −92…−99 dBm from a few meters). Get closer; walls matter.
 - **It never appears in the scan**: check that no other phone/PC is

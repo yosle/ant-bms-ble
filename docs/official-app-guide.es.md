@@ -11,8 +11,6 @@ entender las rarezas de la app.
 > APK del que se extrajo la [especificación del protocolo](../PROTOCOL.es.md)
 > de este repositorio. Las rutas de menú de abajo se **verificaron
 > inspeccionando el código de ese APK**; pueden cambiar en otras versiones.
-> Lo poco que la inspección de código no puede confirmar va marcado
-> **[VERIFICAR]**.
 >
 > Este proyecto no está afiliado al fabricante de ANT BMS; esto es
 > documentación de usuario independiente.
@@ -28,8 +26,7 @@ inglés. Por eso casi todos los teléfonos no ingleses ven la app en chino.
 
 1. En la pantalla principal, ve a la **última sección** (la lista de
    ajustes/"más" del final — se llega por la última pestaña o deslizando
-   hasta la última página; **[VERIFICAR]** cuál de los dos gestos usa tu
-   versión).
+   hasta la última página).
 2. Toca la fila **切换语言** ("Cambiar idioma"). Está en la misma lista que
    **切换版本** ("Cambiar versión") y las filas de política de privacidad.
 3. Se abre una página titulada 切换语言 con exactamente dos opciones:
@@ -119,8 +116,7 @@ Encontradas durante la ingeniería inversa (detalles en la spec):
 ## 7. Problemas de conexión
 
 - **El pack se duerme**: tras un rato sin actividad puede dejar de anunciarse
-  por completo. Espera a que reaparezca, o despierta el BMS aplicando
-  brevemente carga o consumo **[VERIFICAR]**.
+  por completo. Espera a que reaparezca.
 - **Enlace débil**: la radio del BMS no es potente (nuestro pack de
   referencia midió −92…−99 dBm a pocos metros). Acércate; las paredes
   importan.
