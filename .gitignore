@@ -1,0 +1,19 @@
+# The vendor APK is analyzed locally but never distributed with this repo.
+*.apk
+
+# Local screenshots and captures
+Screenshot_*.png
+*.csv
+*.jsonl
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+dist/
+build/
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.coverage
