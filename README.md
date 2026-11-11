@@ -6,6 +6,7 @@
 >
 > Documentación en español: [PROTOCOL.es.md](PROTOCOL.es.md)
 
+[![CI](https://github.com/yosle/ant-bms-ble/actions/workflows/ci.yml/badge.svg)](https://github.com/yosle/ant-bms-ble/actions/workflows/ci.yml)
 ![License: MIT](https://img.shields.io/badge/license-MIT-green.svg)
 ![Python 3.10+](https://img.shields.io/badge/python-3.10%2B-blue.svg)
 ![Read-only by design](https://img.shields.io/badge/BMS%20access-read--only-brightgreen.svg)
