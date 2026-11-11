@@ -7,11 +7,12 @@
 > Documentación en español: [PROTOCOL.es.md](PROTOCOL.es.md)
 
 [![CI](https://github.com/yosle/ant-bms-ble/actions/workflows/ci.yml/badge.svg)](https://github.com/yosle/ant-bms-ble/actions/workflows/ci.yml)
+[![PyPI](https://img.shields.io/pypi/v/ant-bms-ble.svg)](https://pypi.org/project/ant-bms-ble/)
 ![License: MIT](https://img.shields.io/badge/license-MIT-green.svg)
 ![Python 3.10+](https://img.shields.io/badge/python-3.10%2B-blue.svg)
 ![Read-only by design](https://img.shields.io/badge/BMS%20access-read--only-brightgreen.svg)
 
-![antbms live dashboard](docs/demo.svg)
+![antbms live dashboard](https://raw.githubusercontent.com/yosle/ant-bms-ble/main/docs/demo.svg)
 
 That screenshot is the built-in demo — try the whole thing right now, **no
 battery and no Bluetooth needed**:
@@ -89,7 +90,7 @@ That hex is not sample data — it is an actual frame captured mid-discharge
 from the pack in the [supported hardware](#supported-hardware) table. The same
 frame rendered by the TUI:
 
-![a real captured frame rendered by antbms](docs/real-capture.svg)
+![a real captured frame rendered by antbms](https://raw.githubusercontent.com/yosle/ant-bms-ble/main/docs/real-capture.svg)
 
 ### `antbms report` — back up and audit your configuration
 
